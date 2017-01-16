@@ -7,29 +7,24 @@
 	padding: 0;
 }
 
-html {
-	height: 100%;
-
-	color: @palette__primary;
-	background-color: @palette__tertiary;
-
-	-webkit-font-smoothing: antialiased;
-}
 
 body {
 	display: flex;
 	flex-direction: column;
 
-	height: 100vh;
+	min-height: 100vh;
 
+	color: @palette__primary;
 	background: url(../img/header/header__bg.png),
 	url(../img/footer/footer__bg.png),
-	url(../img/main/main__bg.png);
+	@palette__tertiary url(../img/main/main__bg.png);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: 25% 10%, center bottom, center center;
 	background-size: 75%, contain, cover;
 
 	font-family: "BrutalType", Arial, sans-serif;
+
+	-webkit-font-smoothing: antialiased;
 }
 
 img {
