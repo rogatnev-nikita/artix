@@ -1,0 +1,37 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+
+	color: @palette__primary;
+	background-color: @palette__tertiary;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+
+	background: @palette__tertiary url(../img/main/main__bg.png) no-repeat center center;
+	background-size: cover;
+
+	font-family: "BrutalType", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.visible {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
