@@ -1,8 +1,7 @@
 .container__container {
   width: 100%;
-  max-width: 875px;
+  max-width: 550px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 /* ------------------------------------------ */
 /* FONTS
@@ -67,6 +66,7 @@ html {
   height: 100%;
   color: #ffffff;
   background-color: #2d3131;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   display: -ms-flexbox;
@@ -74,11 +74,15 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   height: 100vh;
-  background: #2d3131 url(../img/main/main__bg.png) no-repeat center center;
-  background-size: cover;
+  background: url(../img/header/header__bg.png), url(../img/footer/footer__bg.png), url(../img/main/main__bg.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 25% 10%, center bottom, center center;
+  background-size: 75%, contain, cover;
   font-family: "BrutalType", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 16px;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 .visible {
   display: block;
@@ -90,23 +94,43 @@ body {
 /* MAIN BLOCK
 /* ------------------------------------------ */
 .main {
+  display: -ms-flexbox;
+  display: flex;
   padding: 15px;
   -ms-flex: 1 0 auto;
       flex: 1 0 auto;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .main__container {
   width: 100%;
-  max-width: 875px;
+  max-width: 550px;
   margin: 0 auto;
-  outline: 1px solid red;
+}
+.main h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+}
+.main p {
+  display: block;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 24px;
+}
+.main p span {
+  white-space: nowrap;
+  font-weight: 400;
 }
 /* ------------------------------------------ */
 /* LOGO BLOCK
 /* ------------------------------------------ */
 .logo {
   width: 100%;
-  max-width: 190px;
-  margin: 0 auto;
+  max-width: 100px;
+  margin: 0 auto 60px;
 }
 .logo a {
   text-decoration: none;
@@ -120,14 +144,96 @@ body {
 /* ------------------------------------------ */
 /* SUBSCRIBE BLOCK
 /* ------------------------------------------ */
-.subscribe {
-  padding: 40px 15px;
+.subscribe form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+  margin: 20px 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.subscribe input {
+  width: 100%;
+  max-width: 160px;
+  margin-right: 10px;
+  padding: 3px;
+  color: #009aff;
+  border: 1px solid #009aff;
+  border-radius: 3px;
+  background: transparent;
+  box-shadow: none;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe button {
+  display: block;
+  width: 21px;
+  height: 21px;
+  color: #009aff;
+  border: 1px solid #009aff;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0;
+}
+.subscribe button:focus,
+.subscribe button:active {
+  outline: none;
 }
 /* ------------------------------------------ */
 /* CONTACTS BLOCK
 /* ------------------------------------------ */
 .contacts {
-  padding: 40px 15px;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+.contacts a:nth-child(1) {
+  position: relative;
+  margin-right: 40px;
+}
+.contacts a:nth-child(1):after {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  width: 1px;
+  height: 40px;
+  content: "";
+  background: #009aff;
+}
+/* ------------------------------------------ */
+/* LINK BLOCK
+/* ------------------------------------------ */
+.link {
+  text-decoration: none;
+  color: #009aff;
+}
+.link:hover,
+.link:active {
+  text-decoration: underline;
+  color: #009aff;
+}
+.link--bordered {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 1px 3px;
+  border: 1px solid #009aff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+.link--bordered:hover,
+.link--bordered:active {
+  text-decoration: none;
+  color: #2d3131;
+  border: 1px solid #009aff;
+  background: #009aff;
 }
 /* ------------------------------------------ */
 /* FOOTER BLOCK
@@ -139,7 +245,22 @@ body {
 }
 .footer__container {
   width: 100%;
-  max-width: 875px;
+  max-width: 550px;
   margin: 0 auto;
-  outline: 1px solid red;
+}
+.footer__social {
+  text-align: center;
+}
+.footer__social a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__social a:hover,
+.footer__social a:active {
+  text-decoration: none;
+  color: #009aff;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 11px;
 }

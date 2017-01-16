@@ -12,6 +12,8 @@ html {
 
 	color: @palette__primary;
 	background-color: @palette__tertiary;
+
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -20,12 +22,19 @@ body {
 
 	height: 100vh;
 
-	background: @palette__tertiary url(../img/main/main__bg.png) no-repeat center center;
-	background-size: cover;
+	background: url(../img/header/header__bg.png),
+	url(../img/footer/footer__bg.png),
+	url(../img/main/main__bg.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: 25% 10%, center bottom, center center;
+	background-size: 75%, contain, cover;
 
 	font-family: "BrutalType", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 16px;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 .visible {

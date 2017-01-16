@@ -2,5 +2,50 @@
 /* SUBSCRIBE BLOCK
 /* ------------------------------------------ */
 .subscribe {
-	padding: 40px 15px;
+	form {
+		display: flex;
+		flex-direction: row;
+
+		width: 100%;
+		margin: 20px 0;
+
+		flex-wrap: nowrap;
+	}
+
+	input {
+		width: 100%;
+		max-width: 160px;
+		margin-right: 10px;
+		padding: 3px;
+
+		color: @palette__secondary;
+		border: 1px solid @palette__secondary;
+		border-radius: 3px;
+		background: transparent;
+		box-shadow: none;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button {
+		display: block;
+
+		width: 21px;
+		height: 21px;
+
+		color: @palette__secondary;
+		border: 1px solid @palette__secondary;
+		border-radius: 50%;
+		background: transparent;
+		box-shadow: none;
+
+		font-size: 0;
+
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
 }
