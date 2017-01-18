@@ -28,12 +28,10 @@
 
             <!-- SUBSCRIBE -->
             <div class="subscribe">
-                <form method="post">
+                <form method="post" class="subscribe__form">
                     <input type="email" name="email" id="email" placeholder="Ваша почта" required="required" />
-                    <button>Отправить</button>
+                    <button type="submit">Отправить</button>
                 </form>
-                <span class="subscribe__error hidden">Error</span>
-                <span class="subscribe__success hidden">Success</span>
             </div>
             <!-- SUBSCRIBE END -->
 
@@ -69,7 +67,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
-$(".subscribe form").submit(function(e) {
+$(".subscribe__form").submit(function(e) {
     e.preventDefault();
     var form_data = $(this).serialize();
     $.ajax({
@@ -77,8 +75,7 @@ $(".subscribe form").submit(function(e) {
         url: "php/script.php",
         data: form_data,
         success: function(msg) {
-            $(".subscribe form").addClass("hidden");
-            $(".subscribe__success").removeClass("hidden");
+            $(".subscribe__form").addClass("subscribe__form--success");
         }
     });
 });

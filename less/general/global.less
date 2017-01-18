@@ -33,9 +33,26 @@ img {
 }
 
 .visible {
-	display: block;
+	display: block !important;
 }
 
 .hidden {
-	display: none;
+	display: none !important;
+}
+
+::-webkit-input-placeholder {
+	opacity: 1;
+	color: @palette__secondary;
+}
+::-moz-placeholder {
+	opacity: 1;
+	color: @palette__secondary;
+}
+:-moz-placeholder {
+	opacity: 1;
+	color: @palette__secondary;
+}
+:-ms-input-placeholder {
+	opacity: 1;
+	color: @palette__secondary;
 }
