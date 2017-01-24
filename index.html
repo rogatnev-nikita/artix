@@ -70,15 +70,22 @@
     <script>
 $(".subscribe__form").submit(function(e) {
     e.preventDefault();
-    var form_data = $(this).serialize();
-    $.ajax({
-        type: "POST",
-        url: "php/script.php",
-        data: form_data,
-        success: function(msg) {
-            $(".subscribe__form").addClass("subscribe__form--success");
-        }
-    });
+
+    if ($(".subscribe__form input").val()) {
+        var form_data = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: "php/script.php",
+            data: form_data,
+            success: function(msg) {
+                $(".subscribe__form").removeClass("subscribe__form--error");
+                $(".subscribe__form").addClass("subscribe__form--success");
+            }
+        });
+    } else {
+        $(".subscribe__form").removeClass("subscribe__form--success");
+        $(".subscribe__form").addClass("subscribe__form--error");
+    }
 });
     </script>
     <!-- SCRIPTS END -->
