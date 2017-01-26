@@ -1,0 +1,36 @@
+/* ------------------------------------------ */
+/* LINK BLOCK
+/* ------------------------------------------ */
+.link {
+	text-decoration: none;
+
+	color: @palette__secondary;
+
+	&:hover,
+	&:active {
+		text-decoration: underline;
+
+		color: @palette__secondary;
+	}
+
+	&--bordered {
+		display: inline-block;
+
+		margin-left: 7px;
+		padding: 1px 3px;
+
+		border: 1px solid @palette__secondary;
+		border-radius: 3px;
+
+		font-weight: 700;
+
+		&:hover,
+		&:active {
+			text-decoration: none;
+
+			color: @palette__tertiary;
+			border: 1px solid @palette__secondary;
+			background: @palette__secondary;
+		}
+	}
+}
