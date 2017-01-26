@@ -1,4 +1,4 @@
-# Artix [![Build status][travis-image]][travis-url]
+# Artix Coming Soon Page [![Build status][travis-image]][travis-url]
 [![artix][2]][1]
   [1]: https://rogatnev-nikita.github.io/artix/
   [2]: ./img/artix.jpg (Artix header)
