@@ -1,6 +1,6 @@
 # Artix Coming Soon Page [![Build status][travis-image]][travis-url]
 [![artix][2]][1]
-  [1]: https://rogatnev-nikita.github.io/artix/
+  [1]: http://artixstudio.github.io/index.html
   [2]: ./img/artix.jpg (Artix header)
 
 ARTIX Studio - это разнообразие современных художественных стилей и форм для реализации любой вашей идеи. 
@@ -19,5 +19,5 @@ ARTIX Studio - это разнообразие современных худож
 		npm i  
 		npm run build
 
-[travis-image]: https://travis-ci.org/rogatnev-nikita/artix.svg?branch=master
-[travis-url]: https://travis-ci.org/rogatnev-nikita/artix
+[travis-image]: https://travis-ci.org/artixstudio/artixstudio.github.io.svg?branch=master
+[travis-url]: https://travis-ci.org/artixstudio/artixstudio.github.io
