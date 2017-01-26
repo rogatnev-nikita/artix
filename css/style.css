@@ -183,7 +183,9 @@ img {
 .subscribe button {
   display: block;
   width: 21px;
+  min-width: 21px;
   height: 21px;
+  min-height: 21px;
   color: #009aff;
   border: 1px solid #009aff;
   border-radius: 50%;
@@ -199,33 +201,75 @@ img {
   outline: none;
 }
 .subscribe__form--success input {
+  color: green;
   border-color: green;
 }
 .subscribe__form--error input {
+  color: red;
   border-color: red;
 }
 /* ------------------------------------------ */
 /* CONTACTS BLOCK
 /* ------------------------------------------ */
 .contacts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 100%;
   margin: 20px 0;
+  padding: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
 }
-.contacts a:nth-child(1) {
-  position: relative;
-  margin-right: 40px;
+@media (min-width: 500px) {
+  .contacts {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
 }
-.contacts a:nth-child(1):after {
-  position: absolute;
-  top: -10px;
-  right: -20px;
-  width: 1px;
-  height: 40px;
-  content: "";
-  background: #009aff;
+.contacts li {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  list-style-type: none;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .contacts li {
+    width: 33.3333%;
+    margin: 0;
+  }
+}
+@media (min-width: 500px) {
+  .contacts li:nth-child(1) {
+    text-align: left;
+  }
+  .contacts li:nth-child(1):after {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 1px;
+    height: 40px;
+    content: "";
+    background: #009aff;
+  }
+  .contacts li:nth-child(2) {
+    text-align: center;
+  }
+  .contacts li:nth-child(2):after {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 1px;
+    height: 40px;
+    content: "";
+    background: #009aff;
+  }
+  .contacts li:nth-child(3) {
+    text-align: right;
+  }
 }
 /* ------------------------------------------ */
 /* LINK BLOCK

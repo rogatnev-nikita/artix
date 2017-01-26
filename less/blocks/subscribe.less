@@ -33,7 +33,9 @@
 		display: block;
 
 		width: 21px;
+		min-width: 21px;
 		height: 21px;
+		min-height: 21px;
 
 		color: @palette__secondary;
 		border: 1px solid @palette__secondary;
@@ -56,12 +58,14 @@
 .subscribe__form {
 	&--success {
 		input {
+			color: green;
 			border-color: green;
 		}
 	}
 
 	&--error {
 		input {
+			color: red;
 			border-color: red;
 		}
 	}

@@ -2,30 +2,73 @@
 /* CONTACTS BLOCK
 /* ------------------------------------------ */
 .contacts {
+	display: flex;
+	flex-direction: column;
+
 	width: 100%;
 	margin: 20px 0;
+	padding: 0;
 
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1;
 
-	a {
-		&:nth-child(1) {
-			position: relative;
+	@media (min-width: @breakpoint) {
+		flex-direction: row;
+	}
 
-			margin-right: 40px;
+	li {
+		position: relative;
 
-			&:after {
-				position: absolute;
-				top: -10px;
-				right: -20px;
+		width: 100%;
+		margin: 10px 0;
 
-				width: 1px;
-				height: 40px;
+		list-style-type: none;
 
-				content: "";
+		text-align: center;
 
-				background: @palette__secondary;
+		@media (min-width: @breakpoint) {
+			width: 33.3333%;
+			margin: 0;
+		}
+
+		@media (min-width: @breakpoint) {
+			&:nth-child(1) {
+				text-align: left;
+
+				&:after {
+					position: absolute;
+					top: -10px;
+					right: 0;
+
+					width: 1px;
+					height: 40px;
+
+					content: "";
+
+					background: @palette__secondary;
+				}
+			}
+
+			&:nth-child(2) {
+				text-align: center;
+
+				&:after {
+					position: absolute;
+					top: -10px;
+					right: 0;
+
+					width: 1px;
+					height: 40px;
+
+					content: "";
+
+					background: @palette__secondary;
+				}
+			}
+
+			&:nth-child(3) {
+				text-align: right;
 			}
 		}
 	}
