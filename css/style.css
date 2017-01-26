@@ -289,9 +289,7 @@ img {
   padding: 1px 3px;
   border: 1px solid #009aff;
   border-radius: 3px;
-  font-size: 15px;
   font-weight: 700;
-  line-height: 1;
 }
 .link--bordered:hover,
 .link--bordered:active {
