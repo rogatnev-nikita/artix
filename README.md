@@ -1,6 +1,6 @@
 # Artix Coming Soon Page [![Build status][travis-image]][travis-url]
 [![artix][2]][1]
-  [1]: http://artixstudio.github.io/index.html
+  [1]: http://artix.studio
   [2]: ./img/artix.jpg (Artix header)
 
 ARTIX Studio - это разнообразие современных художественных стилей и форм для реализации любой вашей идеи. 
