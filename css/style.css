@@ -238,8 +238,15 @@ img {
 }
 @media (min-width: 500px) {
   .contacts li {
-    width: 33.3333%;
+    width: auto;
     margin: 0;
+    padding: 0 20px;
+  }
+  .contacts li:nth-child(1) {
+    padding-left: 0;
+  }
+  .contacts li:nth-child(3) {
+    padding-right: 0;
   }
 }
 @media (min-width: 500px) {
@@ -276,11 +283,11 @@ img {
 /* ------------------------------------------ */
 .link {
   text-decoration: none;
-  color: #009aff;
+  color: #ffffff;
 }
 .link:hover,
 .link:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: #009aff;
 }
 .link--bordered {
@@ -294,7 +301,7 @@ img {
 .link--bordered:hover,
 .link--bordered:active {
   text-decoration: none;
-  color: #2d3131;
+  color: #ffffff;
   border: 1px solid #009aff;
   background: #009aff;
 }
