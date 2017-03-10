@@ -200,11 +200,13 @@ img {
 .subscribe button:active {
   outline: none;
 }
-.subscribe__form--success input {
+.subscribe__form--success input,
+.subscribe__form--success button {
   color: green;
   border-color: green;
 }
-.subscribe__form--error input {
+.subscribe__form--error input,
+.subscribe__form--error button {
   color: red;
   border-color: red;
 }
