@@ -1,9 +1,11 @@
-# Artix Coming Soon Page [![Build status][travis-image]][travis-url]
+# Artix Coming Soon Page
 
+[![Build status][travis-image]][travis-url]
 [![Greenkeeper badge](https://badges.greenkeeper.io/artixstudio/artixstudio.github.io.svg)](https://greenkeeper.io/)
-[![artix][2]][1]
-  [1]: http://artix.studio
-  [2]: ./img/artix.jpg (Artix header)
+
+[![Artix][Artix image]][Artix image link]
+  [Artix image link]: http://artix.studio
+  [Artix image]: ./img/artix.jpg (Artix header)
 
 ARTIX Studio - это разнообразие современных художественных стилей и форм для реализации любой вашей идеи. 
 
