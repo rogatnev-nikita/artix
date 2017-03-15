@@ -1,9 +1,9 @@
-# Artix Coming Soon Page [![Build status][travis-image]][travis-url]
+# Artix Coming Soon Page
 
+[![Build status][travis-image]][travis-url]
 [![Greenkeeper badge](https://badges.greenkeeper.io/artixstudio/artixstudio.github.io.svg)](https://greenkeeper.io/)
-[![artix][2]][1]
-  [1]: http://artix.studio
-  [2]: ./img/artix.jpg (Artix header)
+
+[![Artix](./img/artix.jpg)](http://artix.studio/)
 
 ARTIX Studio - это разнообразие современных художественных стилей и форм для реализации любой вашей идеи. 
 
@@ -17,9 +17,9 @@ ARTIX Studio - это разнообразие современных худож
 * Layout: Responsive (flexbox)
 
 ## Build project
-		cd /[path_to_folder]/
-		npm i  
-		npm run build
+	cd /[path_to_folder]/
+	npm i  
+	npm run build
 
 [travis-image]: https://travis-ci.org/artixstudio/artixstudio.github.io.svg?branch=master
 [travis-url]: https://travis-ci.org/artixstudio/artixstudio.github.io
