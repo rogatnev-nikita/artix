@@ -17,9 +17,9 @@ ARTIX Studio - это разнообразие современных худож
 * Layout: Responsive (flexbox)
 
 ## Build project
-		cd /[path_to_folder]/
-		npm i  
-		npm run build
+	cd /[path_to_folder]/
+	npm i  
+	npm run build
 
 [travis-image]: https://travis-ci.org/artixstudio/artixstudio.github.io.svg?branch=master
 [travis-url]: https://travis-ci.org/artixstudio/artixstudio.github.io
