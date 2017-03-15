@@ -3,9 +3,7 @@
 [![Build status][travis-image]][travis-url]
 [![Greenkeeper badge](https://badges.greenkeeper.io/artixstudio/artixstudio.github.io.svg)](https://greenkeeper.io/)
 
-[![Artix][Artix image]][Artix image link]
-  [Artix image link]: http://artix.studio
-  [Artix image]: ./img/artix.jpg (Artix header)
+[![Artix](./img/artix.jpg)](http://artix.studio/)
 
 ARTIX Studio - это разнообразие современных художественных стилей и форм для реализации любой вашей идеи. 
 
